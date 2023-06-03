@@ -6,5 +6,4 @@ Type=simple
 User=agl-driver
 Environment=XDG_RUNTIME_DIR=/run/user/1001/
 Environment=AGL_APP_WAM_DIR=%I
-ExecStart=/usr/bin/WebAppMgr --appid=%I --app-install-dir=/usr/lib/wam_apps/${AGL_APP_WAM_DIR}/
-
+ExecStart=/usr/share/cef-wam/cef-wam --use-views --appid=%I --url="file:///usr/lib/wam_apps/${AGL_APP_WAM_DIR}"
